@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Chat AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <!-- Carte principale -->
+  <div class="w-full max-w-md bg-white shadow-xl rounded-2xl p-6 flex flex-col items-center space-y-4">
+    <h1 class="text-xl font-bold text-gray-800">💬 Mon Assistant</h1>
+    <p class="text-sm text-gray-500">Discutez avec votre IA en toute simplicité</p>
+    
+    <!-- Zone de chat (widget ElevenLabs) -->
+    <div class="w-full border rounded-xl shadow-inner p-3">
+      <elevenlabs-convai 
+        agent-id="agent_0101k30xy77ae2pay8bdqqnvnr6h"
+        style="width: 100%; height: 400px;"
+      ></elevenlabs-convai>
+    </div>
+  </div>
+
+  <!-- Script Widget -->
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
